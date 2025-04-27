@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .container { max-width: 600px; margin: 20px auto; padding: 30px; background: #f8f9fa; }
+        .header { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px; }
+        .content { margin: 25px 0; line-height: 1.6; color: #34495e; }
+        .footer { text-align: center; color: #7f8c8d; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Добро пожаловать в Booking System! 🎉</h1>
+    </div>
+
+    <div class="content">
+        <p>Здравствуйте, <span th:text="${username}"></span>!</p>
+        <p>>Благодарим вас за регистрацию в нашей системе!</p>
+        <p>Ваш аккаунт успешно зарегистрирован с email: <strong th:text="${email}"></strong></p>
+        <p>Теперь вы можете:</p>
+        <ul>
+            <li>Бронировать переговорные комнаты</li>
+            <li>Просматривать свои бронирования</li>
+            <li>Настраивать уведомления</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <p>Это автоматическое сообщение. Пожалуйста, не отвечайте на него.</p>
+    </div>
+</div>
+</body>
+</html>

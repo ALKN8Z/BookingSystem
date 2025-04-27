@@ -1,0 +1,1 @@
+alter table room add column capacity bigint not null default 15;
