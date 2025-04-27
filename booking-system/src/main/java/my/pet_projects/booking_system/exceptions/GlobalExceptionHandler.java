@@ -35,4 +35,14 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(new ValidationExceptionResponse(
                 "Ошибка валидации", errors, LocalDateTime.now()), HttpStatus.BAD_REQUEST);
     }
+
+    @ExceptionHandler
+    public ResponseEntity<ExceptionResponse> handleException(RuntimeException e) {
+        return new ResponseEntity<>(new ExceptionResponse(LocalDateTime.now(), e.getMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler
+    public ResponseEntity<ExceptionResponse> handleException(IllegalArgumentException e) {
+        return new ResponseEntity<>(new ExceptionResponse(LocalDateTime.now(), e.getMessage()), HttpStatus.BAD_REQUEST);
+    }
 }
