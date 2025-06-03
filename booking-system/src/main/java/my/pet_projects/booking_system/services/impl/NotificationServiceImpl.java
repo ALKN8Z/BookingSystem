@@ -1,8 +1,10 @@
-package my.pet_projects.booking_system.services;
+package my.pet_projects.booking_system.services.impl;
 
 import lombok.RequiredArgsConstructor;
 import my.pet_projects.booking_system.models.Booking;
 import my.pet_projects.booking_system.models.User;
+import my.pet_projects.booking_system.services.EmailService;
+import my.pet_projects.booking_system.services.NotificationService;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

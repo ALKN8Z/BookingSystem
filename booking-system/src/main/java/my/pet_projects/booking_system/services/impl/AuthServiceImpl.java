@@ -1,13 +1,12 @@
-package my.pet_projects.booking_system.services;
+package my.pet_projects.booking_system.services.impl;
 
-import io.jsonwebtoken.Jwts;
 import lombok.RequiredArgsConstructor;
 import my.pet_projects.booking_system.dto.requests.AuthRequest;
 import my.pet_projects.booking_system.security.JwtUtils;
 import my.pet_projects.booking_system.security.MyUserDetails;
+import my.pet_projects.booking_system.services.AuthService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

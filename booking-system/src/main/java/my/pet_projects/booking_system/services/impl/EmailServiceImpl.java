@@ -1,8 +1,9 @@
-package my.pet_projects.booking_system.services;
+package my.pet_projects.booking_system.services.impl;
 
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;
+import my.pet_projects.booking_system.services.EmailService;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;

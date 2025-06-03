@@ -1,4 +1,4 @@
-package my.pet_projects.booking_system.services;
+package my.pet_projects.booking_system.services.impl;
 
 import lombok.RequiredArgsConstructor;
 import my.pet_projects.booking_system.dto.requests.BookingRequest;
@@ -11,11 +11,9 @@ import my.pet_projects.booking_system.models.Room;
 import my.pet_projects.booking_system.models.User;
 import my.pet_projects.booking_system.repositories.BookingsRepository;
 import my.pet_projects.booking_system.repositories.RoomsRepository;
-import my.pet_projects.booking_system.repositories.UsersRepository;
 import my.pet_projects.booking_system.security.MyUserDetails;
-import my.pet_projects.booking_system.security.MyUserDetailsService;
+import my.pet_projects.booking_system.services.BookingService;
 import org.modelmapper.ModelMapper;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

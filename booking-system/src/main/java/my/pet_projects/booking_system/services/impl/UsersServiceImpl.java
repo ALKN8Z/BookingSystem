@@ -1,8 +1,9 @@
-package my.pet_projects.booking_system.services;
+package my.pet_projects.booking_system.services.impl;
 
 import lombok.RequiredArgsConstructor;
 import my.pet_projects.booking_system.models.User;
 import my.pet_projects.booking_system.repositories.UsersRepository;
+import my.pet_projects.booking_system.services.UsersService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

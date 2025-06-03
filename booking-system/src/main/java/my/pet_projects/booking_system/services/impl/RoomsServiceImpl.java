@@ -1,13 +1,13 @@
-package my.pet_projects.booking_system.services;
+package my.pet_projects.booking_system.services.impl;
 
 
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import my.pet_projects.booking_system.dto.requests.RoomRequest;
 import my.pet_projects.booking_system.dto.responses.RoomResponse;
 import my.pet_projects.booking_system.exceptions.ResourceNotFoundException;
 import my.pet_projects.booking_system.models.Room;
 import my.pet_projects.booking_system.repositories.RoomsRepository;
+import my.pet_projects.booking_system.services.RoomsService;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
